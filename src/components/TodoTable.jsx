@@ -2,7 +2,7 @@ import axios from "axios";
 
 const TodoTable = ({ todos = [], getAllTodoes, setFormData,refreshCompleted }) => {
   const deleteTodoes = async (id) => {
-    await axios.delete(`/web/api/todo/delete/${id}`);
+    await axios.delete(`https://todo-backend-blond-seven.vercel.app/web/api/todo/delete/${id}`);
     getAllTodoes();
   };
 
@@ -15,7 +15,7 @@ const TodoTable = ({ todos = [], getAllTodoes, setFormData,refreshCompleted }) =
   };
 
   const completeTodo = async (id) => {
-    await axios.put(`/web/api/todo/complete/${id}`);
+    await axios.put(`https://todo-backend-blond-seven.vercel.app/web/api/todo/complete/${id}`);
     getAllTodoes(); // refresh active list
      refreshCompleted();
   };

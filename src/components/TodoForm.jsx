@@ -20,12 +20,12 @@ const TodoForm = ({ getAllTodoes, formData, setFormData }) => {
   try {
     if (_id) {
       await axios.put(
-        `/web/api/todo/edit/${_id}`,
+        `https://todo-backend-blond-seven.vercel.app/web/api/todo/edit/${_id}`,
         formattedPayload
       );
     } else {
       await axios.post(
-        "/web/api/todo/insert",
+        "https://todo-backend-blond-seven.vercel.app/web/api/todo/insert",
         formattedPayload
       );
     }

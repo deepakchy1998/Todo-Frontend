@@ -4,7 +4,7 @@ const TodoHistory = ({ todos = [], refreshCompleted }) => {
   const deleteTodo = async (delId) => {
     try {
       const res = await axios.delete(
-        `/web/api/todo/delete/${delId}`
+        `https://todo-backend-blond-seven.vercel.app/web/api/todo/delete/${delId}`
       );
 
       console.log("Deleted Todo:", res.data); 

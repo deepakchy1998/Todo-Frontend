@@ -19,7 +19,7 @@ const App = () => {
   const getActiveTodos = async () => {
     try {
       const res = await axios.get(
-        "/web/api/todo/active"
+        "https://todo-backend-blond-seven.vercel.app/web/api/todo/active"
       );
       setActiveTodos(res.data);
     } catch (err) {
@@ -31,7 +31,7 @@ const App = () => {
   const getCompletedTodos = async () => {
     try {
       const res = await axios.get(
-        "/web/api/todo/completed"
+        "https://todo-backend-blond-seven.vercel.app/web/api/todo/completed"
       );
       setCompletedTodos(res.data);
     } catch (err) {
