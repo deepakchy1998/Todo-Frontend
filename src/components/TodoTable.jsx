@@ -81,6 +81,7 @@ const TodoTable = ({ todos = [], getAllTodoes, setFormData,refreshCompleted }) =
                         </button>
                       </div>
                     </td>
+                    <hr />
                   </tr>
                 ))
               )}
